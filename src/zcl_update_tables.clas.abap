@@ -65,6 +65,7 @@ CLASS zcl_update_tables IMPLEMENTATION.
                     descripcion = 'Acceso Ilimitado' ) TO lt_categoria.
     INSERT ztb_catego_lm FROM TABLE @lt_categoria.
 
+
     " Inserción de registros en la tabla de clientes
     APPEND VALUE #( client      = sy-mandt
                     id_cliente  = 'C123'
